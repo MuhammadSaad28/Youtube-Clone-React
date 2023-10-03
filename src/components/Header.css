@@ -1,0 +1,78 @@
+.Header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 14px;
+    position: sticky;
+    top: 0;
+    z-index: 200;
+}
+.Header__Left{
+    display: flex;
+    align-items: center;
+    
+}
+
+.Header__Logo{
+    height: 25px;
+    color: white;
+    padding-left: 18px;
+    cursor: pointer;
+}
+.Header__Center{
+    display: flex;
+    align-items: center;
+}
+.Header__Right{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.Header__Search{
+    display: flex;
+    align-items: center;
+    border: 1px solid #272727;
+    border-radius: 12px;
+    width: 30rem;
+    height: 35px;
+    margin: 0 18px;
+}
+.Header__Search input{
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0 12px;
+
+}
+.Right__Icon{
+    padding: 0 8px;
+    cursor: pointer;
+}
+.MicM{
+    display: flex;
+    align-items: center;
+    
+}
+.Mic{
+    
+    background-color: #272727;
+    height: 25px !important; 
+     width: 25px !important;
+    border-radius: 1000px;
+    cursor: pointer;
+}
+.Search{
+    padding: 0 10px;
+    border: 1px solid #272727;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    /* border-radius: 20px; */
+    height: 40px;
+    cursor: pointer;
+}
+.Menu{
+    padding-left: 12px;
+    cursor: pointer;
+}

@@ -1,0 +1,7 @@
+.Sidebar{
+    flex: 0.02;
+    position: static;
+    top: 0;
+    z-index: 99;
+    
+}

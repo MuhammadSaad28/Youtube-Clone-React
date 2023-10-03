@@ -1,0 +1,12 @@
+.SideIcons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 8px;
+    padding: 18px 0;
+    cursor: pointer;
+}
+h2{
+    font-size: 14px;
+    font-weight: 400;
+}
