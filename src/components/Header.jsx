@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import MicIcon from '@mui/icons-material/Mic';
@@ -7,19 +7,27 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import Avatar from '@mui/material/Avatar';
 import './Header.css';
 import img from './saad.jpeg'
+import { Link } from 'react-router-dom';
 
 
 function Header() {
+
+  const [inputSearch,setInputSearch] = useState("");
   return (
     <div className='Header'>
       <div className="Header__Left">
         <MenuIcon className='Menu' />
-        <img src="https://www.gstatic.com/youtube/img/branding/youtubelogo/svg/youtubelogo.svg" className='Header__Logo' />
+        <Link to={`/`}>
+        <img src="https://www.gstatic.com/youtube/img/branding/youtubelogo/svg/youtubelogo.svg" 
+        className='Header__Logo' />
+        </Link>
       </div>
       <div className="Header__Center">
         <div className="Header__Search">
-          <input type="text" placeholder='Search'/>
+          <input value={inputSearch} onChange={e=>setInputSearch(e.target.value)} type="text" placeholder='Search'/>
+          <Link to={`/search/${inputSearch}`}>
           <SearchIcon className='Search' />
+          </Link>
         </div>
         <div className="MicM">
           <MicIcon className='Mic' />

@@ -1,0 +1,6 @@
+.Head2{
+    display: flex;
+    position: sticky;
+    top: 0;
+    margin-left: 25px;
+}
